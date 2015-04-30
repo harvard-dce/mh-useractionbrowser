@@ -1,0 +1,30 @@
+{
+  "name": "mh-useractionbrowser",
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  },
+  "version": "0.0.0",
+  "homepage": "https://github.com/harvard-dce/mh-useractionbrowser",
+  "authors": [
+    "Reinhard Engels <reinhard.engels@gmail.com>"
+  ],
+  "description": "Interactive visualization of Matterhorn user actions on zoomable timeline",
+  "keywords": [
+    "timeline",
+    "matterhorn",
+    "opencast",
+    "visualization",
+    "d3"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "d3": "~3.5.5"
+  }
+}
