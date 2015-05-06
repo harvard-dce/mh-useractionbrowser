@@ -5,3 +5,4 @@ bower_components
 *~
 *.DS_Store
 actions.json
+viewings.json
