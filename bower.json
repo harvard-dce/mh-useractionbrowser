@@ -1,7 +1,12 @@
 {
   "name": "mh-useractionbrowser",
   "dependencies": {
-    "bootstrap": "~3.2.0"
+    "jquery": "~1.11.1",
+    "d3": "~3.5.3",
+    "bootstrap-multiselect": "~0.9.10",
+    "bootstrap": "~3.3.1",
+    "d3-tip": "~0.6.6",
+    "underscore": "~1.7.0"
   },
   "version": "0.0.0",
   "homepage": "https://github.com/harvard-dce/mh-useractionbrowser",

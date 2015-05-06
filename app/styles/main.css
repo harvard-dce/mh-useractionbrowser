@@ -1,89 +1,101 @@
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
 
-/* Space out content a bit */
+
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-family: sans-serif;
+  overflow: hidden;  
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
-}
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
+wfb_loading {
+  height:100%;
+  width:100%;
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  vertical-align: middle;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+h1 {
+   font-size: 16px;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
+.nav_header {
+  font-size: 10px;
+  font-weight: normal;
+  text-align: center;
 }
 
-.marketing p + h4 {
-  margin-top: 28px;
+rect {
+     shape-rendering: crispEdges;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+rect.pane {
+  cursor: move;
+  fill: none;
+  pointer-events: all;
+}
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
+.xaxis {
+  font-family: sans-serif;
+  font-size: 8px;
 
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
+}
 
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+.xaxis path {
+  fill:none;
+  stroke: #000;
+}
+
+.xaxis line {
+  stroke: #000;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip.n:after {
+  box-sizing: border-box;
+  display: inline;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip.s:after {
+  box-sizing: border-box;
+  display: inline;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25B4";
+  position: absolute;
+  text-align: center;
+  top:-8px;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+/* Style southward tooltips differently */
+.d3-tip.n:before {
+  margin: 0 0 1px 0;
+  top: 100%;
+  left: 0;
 }
